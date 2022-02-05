@@ -1,3 +1,8 @@
+# Default
+.gitignore
+.gitattributes
+package-lock.json
+
 # Logs
 logs
 *.log

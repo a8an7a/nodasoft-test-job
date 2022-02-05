@@ -26,7 +26,7 @@ export default {
         new CopyWebpackPlugin({
             patterns: [
                 {
-                    from: resolve(__dirname, 'src/favicon.png'),
+                    from: resolve(__dirname, 'src/favicon.svg'),
                     to: resolve(__dirname, 'dist'),
                 },
             ],
@@ -50,7 +50,7 @@ export default {
                     },
                 ],
             },
-            { test: /\.ico$/i, type: 'asset/resource' },
+            { test: /\.svg$/i, type: 'asset/resource' },
         ],
     },
 }

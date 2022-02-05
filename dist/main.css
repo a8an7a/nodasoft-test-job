@@ -1,0 +1,208 @@
+/*!**************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./styles/styles.scss ***!
+  \**************************************************************************************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+/*!******************************************************************************************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!../node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[3]!./styles/styles.scss (1) ***!
+  \******************************************************************************************************************************************************************************************/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  background-color: #C0DBD9;
+}
+
+.header, .footer {
+  height: 100px;
+  padding: 30px;
+  background-color: #7FAFF6;
+}
+
+.popup-link {
+  display: inline-block;
+  color: #FFFFFF;
+  line-height: 23px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #A5C7F9;
+  text-decoration: none;
+}
+
+.popup {
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: rgba(51, 51, 51, 0.3);
+}
+.popup:target {
+  opacity: 1;
+  pointer-events: all;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.popup__cover {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+.popup__content {
+  font-size: 53px;
+  color: #333333;
+  line-height: 62px;
+}
+
+.popup-close-link {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.block-one {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-areas: "md lg sm" "xl xl xs";
+  overflow: hidden;
+  counter-reset: count 0;
+  background-color: #B3F95A;
+}
+.block-one__elem {
+  position: relative;
+  height: 198px;
+  background-color: #8AD191;
+  counter-increment: count;
+}
+.block-one__elem::before {
+  top: 50%;
+  right: 50%;
+  position: absolute;
+  color: #FFFFFF;
+  font-size: 53px;
+  line-height: 62px;
+  content: counter(count);
+  -webkit-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
+}
+.block-one__elem_sm, .block-one__elem_xs {
+  width: 160px;
+  grid-area: sm;
+}
+.block-one__elem_xs {
+  grid-area: xs;
+}
+.block-one__elem_md {
+  width: 390px;
+  grid-area: md;
+}
+.block-one__elem_lg {
+  width: 590px;
+  grid-area: lg;
+}
+.block-one__elem_xl {
+  width: 995px;
+  grid-area: xl;
+}
+
+.block-two {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 15px;
+  background-color: #88B5BF;
+}
+.block-two__elem {
+  width: 25%;
+  margin: 0 15px;
+  aspect-ratio: 255/199;
+  background-color: #0D89B0;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
